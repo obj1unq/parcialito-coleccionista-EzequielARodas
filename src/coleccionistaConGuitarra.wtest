@@ -5,6 +5,10 @@ describe "test del coleccionista usando la guitarra"{
 		
 	fixture {
 		coleccionista.agregarElemento(guitarraElectrica)
+		
+		//CORRECCION: directamente hablar con guitarra: 
+		//CORRECCION: 	guitarraElectrica.equipadaConMicrofono(gibson)
+		//CORRECCION: guitarraElectrica.guardadaEn(estucheFlexible)
 		coleccionista.equiparGuitarraConMicrofono(gibson)
 		coleccionista.guardarGuitarraEn(estucheFlexible)
 		//TODO: Todos los valores de los test asumen que el coleccionista solo

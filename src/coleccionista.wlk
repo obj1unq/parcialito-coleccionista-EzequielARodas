@@ -1,3 +1,9 @@
+//CORRECCION: Nota: MB
+//CORRECCION: El único problema es que le agregaste al coleccionista la responsabilidad de administrar la configuración de la guitarra.
+//CORRECCION: Lo mejor es que cada objeto se ocupe de lo suyo, al coleccionista le debés agregar la guitarra y no hay motivo por el cual
+//CORRECCION: deba hacer algo especial por ella. Si querés configurarla deberías hablar directamente con el objeto guitarra
+
+
 /*     Parcialito: Coleccionista
  * 	
  *   Se trata de una aplicación que sirve para que una persona, dueña de una galería de elementos coleccionables
@@ -25,7 +31,7 @@
  * 
  * 	 El código inicial incluye una serie de test programados (no deberían ser modificados) que deben ejecutarse con éxito. 
  * 
- *   Puede acceder a cualquier material "no humano" de consulta. En especial, la guía de colecciones y closures accesible en el sitio
+ *   Puede acceder a cualquier material "no humano" de consulta.Flexible En especial, la guía de colecciones y closures accesible en el sitio
  *   web de la materia.
  * 
  * Punto 1) COLECCIONES: Hacer que el objeto coleccionista entienda los siguientes mensajes:
@@ -122,6 +128,10 @@ var galeriaDeElementos=#{}
     //  si el valor supera $600
     	return galeriaDeElementos.all({elemento => elemento.valor()>=600})
 	}
+	
+	
+	//CORRECCION: Estos últimos dos métodos no corresponde que esté en el coleccionista.
+	//Hablar direrectamente con la guitarra desde donde se requiera.
 	
 	method equiparGuitarraConMicrofono(_microfono){
 	//Equipa a la guitarra electrica con un microfono
